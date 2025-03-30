@@ -25,6 +25,10 @@
       "dest": "/song.mp3"
     },
     {
+      "src": "/(.*\\.(png|jpg|jpeg|gif|ico|PNG|JPG|JPEG|GIF))$",
+      "dest": "/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
