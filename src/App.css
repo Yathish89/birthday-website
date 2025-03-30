@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
 }
 
 .App-logo {
@@ -34,5 +36,55 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.birthday-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.birthday-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+}
+
+h1 {
+  color: #ff6b6b;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.birthday-message {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+.cake {
+  font-size: 4rem;
+  margin: 1.5rem 0;
+}
+
+.balloons {
+  font-size: 3rem;
+  margin: 1rem 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }
