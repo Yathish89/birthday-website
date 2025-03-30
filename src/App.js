@@ -103,7 +103,7 @@ function App() {
 
       {/* Additional decorative images */}
       <motion.img
-        src="/imaage.JPG"
+        src="birthday-website/public/imaage.JPG"
         alt="Decorative Heart 3"
         className="absolute w-16 h-16 opacity-50"
         animate={{
@@ -119,7 +119,7 @@ function App() {
       />
 
       <motion.img
-        src="/image.PNG"
+        src="birthday-website/public/image.PNG"
         alt="Decorative Heart 4"
         className="absolute w-20 h-20 opacity-50"
         animate={{
