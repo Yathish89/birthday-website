@@ -64,11 +64,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-200 via-pink-300 to-pink-200 flex flex-col items-center justify-center text-center p-4 relative overflow-hidden">
-      {/* Floating Images */}
-      <motion.img
-        src="/imaage.JPG"
-        alt="Floating Heart 1"
-        className="absolute w-24 h-24 opacity-70"
+      {/* Decorative Elements */}
+      <motion.div
+        className="absolute w-24 h-24 rounded-full bg-pink-400/30"
         animate={{
           x: [0, 100, 0],
           y: [0, -50, 0],
@@ -83,10 +81,8 @@ function App() {
         style={{ top: '15%', left: '15%' }}
       />
 
-      <motion.img
-        src="/image.PNG"
-        alt="Floating Heart 2"
-        className="absolute w-32 h-32 opacity-70"
+      <motion.div
+        className="absolute w-32 h-32 rounded-full bg-pink-300/30"
         animate={{
           x: [0, -100, 0],
           y: [0, 50, 0],
@@ -99,39 +95,6 @@ function App() {
           ease: "linear"
         }}
         style={{ bottom: '15%', right: '15%' }}
-      />
-
-      {/* Additional decorative images */}
-      <motion.img
-        src="birthday-website/public/imaage.JPG"
-        alt="Decorative Heart 3"
-        className="absolute w-16 h-16 opacity-50"
-        animate={{
-          scale: [1, 1.2, 1],
-          rotate: [-30, 30, -30]
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-        style={{ top: '30%', right: '20%' }}
-      />
-
-      <motion.img
-        src="birthday-website/public/image.PNG"
-        alt="Decorative Heart 4"
-        className="absolute w-20 h-20 opacity-50"
-        animate={{
-          scale: [1, 1.1, 1],
-          rotate: [30, -30, 30]
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-        style={{ bottom: '30%', left: '20%' }}
       />
 
       <motion.h1 
